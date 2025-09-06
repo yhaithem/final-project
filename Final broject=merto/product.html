@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="fontaowsem/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+ 
+
+        <!-- ===== Top Header ===== -->
+    <header class="py-3 border-bottom">
+      <div class="container d-flex align-items-center justify-content-between">
+        <!-- Logo -->
+        <a href="#" class="navbar-brand fw-bold fs-3"
+          >M<span class="text-danger">e</span>rto</a
+        >
+
+        <!-- Contact -->
+        <div class="d-flex align-items-center">
+          <i class="fa fa-phone fs-4 me-2"></i>
+          <div>
+            <small class="text-muted">Contact us 24/7</small><br />
+            <span class="fw-bold">(+92) 3942 7879</span>
+          </div>
+        </div>
+
+        <!-- Search Bar -->
+        <form class="d-flex flex-grow-1 mx-4" style="max-width: 500px">
+          <select class="form-select rounded-0">
+            <option>All Categories</option>
+            <option>Electronics</option>
+            <option>Fashion</option>
+            <option>Home</option>
+          </select>
+          <input
+            type="text"
+            class="form-control rounded-0"
+            placeholder="Search for products..."
+          />
+          <button class="btn btn-dark"><i class="fa fa-search"></i></button>
+        </form>
+
+        <!-- Right icons -->
+        <div class="d-flex align-items-center">
+          <div class="me-3">
+            <img src="https://flagcdn.com/w20/us.png" alt="" /> English
+            <i class="fa fa-caret-down ms-1"></i>
+          </div>
+          <div class="me-3">USD <i class="fa fa-caret-down"></i></div>
+          <a href="#" class="me-3 text-dark"
+            ><i class="fa fa-user"></i> <strong>Account</strong></a
+          >
+          <a href="#" class="me-3 position-relative text-dark">
+            <i class="fa fa-heart"></i>
+            <span
+              class="badge bg-danger position-absolute top-0 start-100 translate-middle"
+              >0</span
+            >
+          </a>
+          <a href="#" class="position-relative text-dark">
+            <i class="fa fa-shopping-cart"></i>
+            <span
+              class="badge bg-danger position-absolute top-0 start-100 translate-middle"
+              >0</span
+            >
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== Navbar ===== -->
+    <nav class="border-top border-bottom">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center py-2">
+          <i class="fa fa-bars me-2"></i> <strong>SHOP BY CATEGORIES</strong>
+        </div>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-danger" href="index.html">Homepages</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="category.html">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+          <li class="nav-item">
+            <div class="dropdown ">
+  <button class="btn  dropdown-toggle nav-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    pages
+  </button>
+  <ul class="dropdown-menu">
+             <li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
+
+   
+  </ul>
+</div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="fa fa-ticket-alt"></i> Best Discount</a
+            >
+          </li>
+        </ul>
+        <div class="py-2">Recently viewed <i class="fa fa-caret-down"></i></div>
+      </div>
+    </nav>
+    <!-- ============================================ -->
+    <!-- photo -->
+    <div class="container py-5">
+      <div class="row">
+        <!-- الصور الصغيرة - عمود رفيع على اليسار -->
+        <div class="col-1 p-2">
+          <div class="d-flex flex-column gap-2">
+            <img
+              src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=80&h=80&fit=crop"
+              class="thumbnail-img rounded border active"
+              data-large="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=600&fit=crop"
+              onclick="changeMainImage(this)"
+            />
+
+            <img
+              src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=80&h=80&fit=crop"
+              class="thumbnail-img rounded border"
+              data-large="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&h=600&fit=crop"
+              onclick="changeMainImage(this)"
+            />
+
+            <img
+              src="https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=80&h=80&fit=crop"
+              class="thumbnail-img rounded border"
+              data-large="https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=600&h=600&fit=crop"
+              onclick="changeMainImage(this)"
+            />
+
+            <img
+              src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=80&h=80&fit=crop"
+              class="thumbnail-img rounded border"
+              data-large="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=600&fit=crop"
+              onclick="changeMainImage(this)"
+            />
+          </div>
+        </div>
+
+        <!-- الصورة الكبيرة - في الوسط -->
+        <div class="col-6 p-3">
+          <div
+            class="main-image-container rounded position-relative"
+            onmousemove="zoomImage(event)"
+            onmouseleave="resetZoom()"
+          >
+            <img
+              id="mainImage"
+              src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=600&fit=crop"
+              class="main-image rounded"
+              alt="Chair"
+            />
+            <button class="btn btn-light position-absolute top-0 end-0 m-2">
+              <i class="fas fa-expand"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- تفاصيل المنتج - على اليمين -->
+        <div class="col-5 p-4">
+          <p class="text-muted small mb-1">Ashley, Max</p>
+          <h1 class="h4 fw-bold mb-3">
+            Light Luxury Urban Leather Lounge Chair Home Living Room
+          </h1>
+
+          <!-- التقييم -->
+          <div class="mb-3">
+            <span class="text-warning">★★</span>
+            <span class="text-muted">☆☆☆</span>
+            <span class="small text-muted ms-2">2.00 (1 Review)</span>
+            <a href="#" class="text-primary text-decoration-none ms-2 small"
+              >Write a review</a
+            >
+          </div>
+
+          <!-- المميزات -->
+          <ul class="list-unstyled text-success small mb-3">
+            <li><i class="fas fa-check me-2"></i>Easy to assemble</li>
+            <li><i class="fas fa-check me-2"></i>Maneuverability</li>
+            <li><i class="fas fa-check me-2"></i>Value for money</li>
+          </ul>
+
+          <!-- السعر -->
+          <h2 class="display-6 fw-bold text-dark mb-3">$179</h2>
+
+          <!-- حالة المخزن -->
+          <p class="text-success fw-semibold mb-4">In stock</p>
+
+          <!-- الكمية والأزرار -->
+          <div class="row align-items-center mb-4 g-2">
+            <div class="col-3">
+              <div class="input-group">
+                <button
+                  class="btn btn-outline-secondary"
+                  onclick="decreaseQuantity()"
+                >
+                  -
+                </button>
+                <input
+                  type="text"
+                  id="quantity"
+                  class="form-control text-center"
+                  value="1"
+                  readonly
+                />
+                <button
+                  class="btn btn-outline-secondary"
+                  onclick="increaseQuantity()"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="col-5">
+              <button class="btn btn-dark w-100">
+                <i class="fas fa-plus me-1"></i> ADD TO CART
+              </button>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-danger w-100">BUY NOW</button>
+            </div>
+          </div>
+
+          <!-- أزرار إضافية -->
+          <div class="mb-4">
+            <button class="btn btn-outline-secondary btn-sm me-2">
+              <i class="far fa-heart me-1"></i> Add to wishlist
+            </button>
+            <button class="btn btn-outline-secondary btn-sm">
+              <i class="fas fa-balance-scale me-1"></i> Add to compare
+            </button>
+          </div>
+
+          <!-- معلومات المنتج -->
+          <div class="small text-muted">
+            <p><strong class="text-dark">SKU:</strong> TTFJVPZRJ4</p>
+            <p>
+              <strong class="text-dark">Categories:</strong> Chairs, Office
+              Furniture, Outdoor, Sofas
+            </p>
+          </div>
+
+          <!-- أيقونات التواصل -->
+          <div class="mt-3">
+            <a href="#" class="text-muted me-3"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-muted me-3"
+              ><i class="fab fa-pinterest"></i
+            ></a>
+            <a href="#" class="text-muted me-3"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-muted me-3"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="nav nav-tabs container" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="home-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#home-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="home-tab-pane"
+          aria-selected="true"
+        >
+          Home
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="profile-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#profile-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="profile-tab-pane"
+          aria-selected="false"
+        >
+          Profile
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="contact-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#contact-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="contact-tab-pane"
+          aria-selected="false"
+        >
+          Contact
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div
+        class="tab-pane fade show active"
+        id="home-tab-pane"
+        role="tabpanel"
+        aria-labelledby="home-tab"
+        tabindex="0"
+      >
+        <div class="container py-5">
+          <div class="row">
+            <!-- Left Column - Marketing Content -->
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="bg-light rounded p-4">
+                <h2 class="mb-4 text-primary">Performance & Innovation</h2>
+                <p class="fs-6 lh-lg">
+                  Compellingly grow performance based mindshare through parallel
+                  potentialities. Rapidiously underwhelm top-line catalysts for
+                  change before best-of-breed materials. Competently brand
+                  timely catalysts for change through sustainable systems.
+                  Completely expedite ubiquitous bandwidth after integrated
+                  action items. Progressively transform leading-edge supply
+                  chains whereas flexible niche markets.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right Column - Information Table -->
+            <div class="col-lg-6 col-md-12">
+              <div class="bg-white rounded shadow-sm">
+                <!-- Shipping Row -->
+                <div class="row border-bottom">
+                  <div class="col-4 bg-light p-3">
+                    <strong class="text-dark">Shipping</strong>
+                  </div>
+                  <div class="col-8 p-3">
+                    <span class="text-dark"
+                      >We currently offer free shipping worldwide on all orders
+                      over $100.</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Sizing Row -->
+                <div class="row border-bottom">
+                  <div class="col-4 bg-light p-3">
+                    <strong class="text-dark">Sizing</strong>
+                  </div>
+                  <div class="col-8 p-3">
+                    <span class="text-dark"
+                      >Fits true to size. Do you need size advice?</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Return & Exchange Row -->
+                <div class="row border-bottom">
+                  <div class="col-4 bg-light p-3">
+                    <strong class="text-dark">Return & exchange</strong>
+                  </div>
+                  <div class="col-8 p-3">
+                    <span class="text-dark"
+                      >If you are not satisfied with your purchase you can
+                      return it to us within 14 days for an exchange or
+                      refund.</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Assistance Row -->
+                <div class="row">
+                  <div class="col-4 bg-light p-3">
+                    <strong class="text-dark">Assistance</strong>
+                  </div>
+                  <div class="col-8 p-3">
+                    <span class="text-dark"
+                      >Contact us on (+44) 555 88 65, or email us at
+                    </span>
+                    <a
+                      href="mailto:support@themesky.com"
+                      class="text-primary text-decoration-none"
+                      >support@themesky.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="profile-tab-pane"
+        role="tabpanel"
+        aria-labelledby="profile-tab"
+        tabindex="0"
+      >
+        <div class="container py-5">
+          <div class="bg-white rounded shadow-sm">
+            <!-- Fabric Type Row -->
+            <div class="row border-bottom">
+              <div class="col-3 bg-light p-3">
+                <strong class="text-dark">Fabric Type</strong>
+              </div>
+              <div class="col-9 p-3">
+                <span class="text-dark"
+                  >50% Cotton, 48% Polyester, 2% Spandex</span
+                >
+              </div>
+            </div>
+
+            <!-- Care Instructions Row -->
+            <div class="row border-bottom">
+              <div class="col-3 bg-light p-3">
+                <strong class="text-dark">Care Instructions</strong>
+              </div>
+              <div class="col-9 p-3">
+                <span class="text-dark">Hand Wash Only</span>
+              </div>
+            </div>
+
+            <!-- Returns Row -->
+            <div class="row border-bottom">
+              <div class="col-3 bg-light p-3">
+                <strong class="text-dark">Returns</strong>
+              </div>
+              <div class="col-9 p-3">
+                <span class="text-dark">FREE Returns</span>
+              </div>
+            </div>
+
+            <!-- Season Row -->
+            <div class="row border-bottom">
+              <div class="col-3 bg-light p-3">
+                <strong class="text-dark">Season</strong>
+              </div>
+              <div class="col-9 p-3">
+                <span class="text-dark">Spring, summer and fall</span>
+              </div>
+            </div>
+
+            <!-- Dimensions Row -->
+            <div class="row border-bottom">
+              <div class="col-3 bg-light p-3">
+                <strong class="text-dark">Dimensions</strong>
+              </div>
+              <div class="col-9 p-3">
+                <span class="text-dark">0.5 x 0.5 x 0.5 inches</span>
+              </div>
+            </div>
+
+            <!-- Item Weight Row -->
+            <div class="row border-bottom">
+              <div class="col-3 bg-light p-3">
+                <strong class="text-dark">Item Weight</strong>
+              </div>
+              <div class="col-9 p-3">
+                <span class="text-dark">5.6 ounces</span>
+              </div>
+            </div>
+
+            <!-- Material Row -->
+            <div class="row border-bottom">
+              <div class="col-3 bg-light p-3">
+                <strong class="text-dark">Material</strong>
+              </div>
+              <div class="col-9 p-3">
+                <span class="text-dark"
+                  >Varsity jacket made of polyester fabric, super durable and
+                  soft enough, breathable, cozy, comfortable</span
+                >
+              </div>
+            </div>
+
+            <!-- Multi-occasion Row -->
+            <div class="row">
+              <div class="col-3 bg-light p-3">
+                <strong class="text-dark">Multi-occasion</strong>
+              </div>
+              <div class="col-9 p-3">
+                <span class="text-dark"
+                  >Fashion unisex letterman jackets, perfect for men, women,
+                  teens or couples</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="contact-tab-pane"
+        role="tabpanel"
+        aria-labelledby="contact-tab"
+        tabindex="0"
+      >
+        ...
+      </div>
+      <div
+        class="tab-pane fade"
+        id="disabled-tab-pane"
+        role="tabpanel"
+        aria-labelledby="disabled-tab"
+        tabindex="0"
+      >
+        ...
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white pt-5 pb-3">
+      <div class="container">
+        <!-- Brand and Contact Info -->
+        <div class="row mb-5">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h2 class="fw-bold mb-4"><i class="fas fa-gem me-2"></i> Merto</h2>
+            <div class="mb-3">
+              <i class="fas fa-map-marker-alt me-2"></i>
+              <span class="text-light"
+                >29 SE 2nd Ave, Miami<br />Florida 33131, United States</span
+              >
+            </div>
+            <div class="mb-3">
+              <i class="fas fa-envelope me-2"></i>
+              <span class="text-light">info@example.com</span>
+            </div>
+            <div class="mb-3">
+              <i class="fas fa-phone me-2"></i>
+              <h5 class="fw-bold d-inline">(+92) 3942 7879</h5>
+            </div>
+          </div>
+
+          <!-- Shopping Links -->
+          <div class="col-lg-2 col-md-6 col-6 mb-4">
+            <h5 class="fw-semibold mb-3">
+              <i class="fas fa-shopping-bag me-2"></i> SHOPPING
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light">Wishlist</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >Shop by Brand</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light">Offers</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-danger"
+                  >Track order</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >Size Guide</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Information Links -->
+          <div class="col-lg-2 col-md-6 col-6 mb-4">
+            <h5 class="fw-semibold mb-3">
+              <i class="fas fa-info-circle me-2"></i> INFORMATION
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >Track Order</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >Shipping & Returns</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light">About us</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light">Help</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >Gift Cards</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Account Links -->
+          <div class="col-lg-2 col-md-6 col-6 mb-4">
+            <h5 class="fw-semibold mb-3">
+              <i class="fas fa-user me-2"></i> ACCOUNT
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light">Cart</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >My account</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >My orders</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light">Wishlist</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >Affiliate Program</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-semibold mb-3">
+              <i class="fas fa-envelope-open-text me-2"></i> Let's keep in touch
+            </h5>
+            <div class="input-group mb-4">
+              <input
+                type="email"
+                class="form-control bg-dark text-white border-secondary"
+                placeholder="enter your email address"
+                style="border-right: none"
+              />
+              <button class="btn btn-light" type="button">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="d-flex">
+              <a href="#" class="text-light me-3 fs-5"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-light me-3 fs-5"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+              <a href="#" class="text-light me-3 fs-5"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-light me-3 fs-5"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#" class="text-light me-3 fs-5"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Help Sections -->
+        <div class="row mb-4">
+          <div class="col-md-4 mb-3">
+            <div
+              class="bg-secondary bg-opacity-25 rounded p-4 text-center h-100"
+            >
+              <i class="fas fa-headset fs-2 mb-3"></i>
+              <h6 class="fw-semibold">
+                Didn't find what you were looking for?
+              </h6>
+              <a href="#" class="text-decoration-none text-light">Contact us</a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div
+              class="bg-secondary bg-opacity-25 rounded p-4 text-center h-100"
+            >
+              <i class="fas fa-life-ring fs-2 mb-3"></i>
+              <h6 class="fw-semibold">How can we help you today?</h6>
+              <a href="#" class="text-decoration-none text-light"
+                >Help Center</a
+              >
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div
+              class="bg-secondary bg-opacity-25 rounded p-4 text-center h-100"
+            >
+              <i class="fas fa-comments fs-2 mb-3"></i>
+              <h6 class="fw-semibold">We'd love to hear what you think!</h6>
+              <a href="#" class="text-decoration-none text-light"
+                >Give Feedback</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="row border-top pt-4">
+          <div class="col-md-6 mb-3">
+            <p class="text-muted mb-0">
+              Copyright © Merto. All Rights Reserved
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <!-- Payment Methods -->
+            <div class="d-flex flex-wrap justify-content-md-end">
+              <span class="badge bg-light text-dark me-2 mb-2 p-2">
+                <i class="fab fa-paypal"></i> PayPal
+              </span>
+              <span class="badge bg-light text-dark me-2 mb-2 p-2">
+                <i class="fab fa-apple-pay"></i> Apple Pay
+              </span>
+              <span class="badge bg-light text-dark me-2 mb-2 p-2">
+                <i class="fab fa-cc-visa"></i> Visa
+              </span>
+              <span class="badge bg-light text-dark me-2 mb-2 p-2">
+                <i class="fab fa-cc-discover"></i> Discover
+              </span>
+              <span class="badge bg-light text-dark me-2 mb-2 p-2">
+                <i class="fab fa-cc-jcb"></i> JCB
+              </span>
+              <span class="badge bg-light text-dark me-2 mb-2 p-2">
+                <i class="fas fa-credit-card"></i> Pay
+              </span>
+              <span class="badge bg-light text-dark me-2 mb-2 p-2">
+                <i class="fab fa-cc-amex"></i> Amex
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back to Top Button -->
+      <button
+        class="btn btn-danger position-fixed bottom-0 end-0 m-4 rounded-circle shadow"
+        style="width: 50px; height: 50px"
+        onclick="window.scrollTo(0,0)"
+      >
+        <i class="fas fa-chevron-up"></i>
+      </button>
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="fontaowsem/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+ <!-- ===== Top Header ===== -->
+    <header class="py-3 border-bottom">
+      <div class="container d-flex align-items-center justify-content-between">
+        <!-- Logo -->
+        <a href="#" class="navbar-brand fw-bold fs-3"
+          >M<span class="text-danger">e</span>rto</a
+        >
+
+        <!-- Contact -->
+        <div class="d-flex align-items-center">
+          <i class="fa fa-phone fs-4 me-2"></i>
+          <div>
+            <small class="text-muted">Contact us 24/7</small><br />
+            <span class="fw-bold">(+92) 3942 7879</span>
+          </div>
+        </div>
+
+        <!-- Search Bar -->
+        <form class="d-flex flex-grow-1 mx-4" style="max-width: 500px">
+          <select class="form-select rounded-0">
+            <option>All Categories</option>
+            <option>Electronics</option>
+            <option>Fashion</option>
+            <option>Home</option>
+          </select>
+          <input
+            type="text"
+            class="form-control rounded-0"
+            placeholder="Search for products..."
+          />
+          <button class="btn btn-dark"><i class="fa fa-search"></i></button>
+        </form>
+
+        <!-- Right icons -->
+        <div class="d-flex align-items-center">
+          <div class="me-3">
+            <img src="https://flagcdn.com/w20/us.png" alt="" /> English
+            <i class="fa fa-caret-down ms-1"></i>
+          </div>
+          <div class="me-3">USD <i class="fa fa-caret-down"></i></div>
+          <a href="#" class="me-3 text-dark"
+            ><i class="fa fa-user"></i> <strong>Account</strong></a
+          >
+          <a href="#" class="me-3 position-relative text-dark">
+            <i class="fa fa-heart"></i>
+            <span
+              class="badge bg-danger position-absolute top-0 start-100 translate-middle"
+              >0</span
+            >
+          </a>
+          <a href="#" class="position-relative text-dark">
+            <i class="fa fa-shopping-cart"></i>
+            <span
+              class="badge bg-danger position-absolute top-0 start-100 translate-middle"
+              >0</span
+            >
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== Navbar ===== -->
+    <nav class="border-top border-bottom">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center py-2">
+          <i class="fa fa-bars me-2"></i> <strong>SHOP BY CATEGORIES</strong>
+        </div>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-danger" href="index.html">Homepages</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+
+          <li class="nav-item">
+            <div class="dropdown ">
+  <button class="btn  dropdown-toggle nav-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    pages
+  </button>
+  <ul class="dropdown-menu">
+             <li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
+
+   
+  </ul>
+</div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="fa fa-ticket-alt"></i> Best Discount</a
+            >
+          </li>
+        </ul>
+        <div class="py-2">Recently viewed <i class="fa fa-caret-down"></i></div>
+      </div>
+    </nav>
+<!-- ===================================== -->
+<section class="shop-section py-5">
+  <div class="container">
+    <div class="row">
+      
+      <!-- Sidebar -->
+      <aside class="col-md-3 shop-sidebar">
+        <h6 class="fw-bold mb-3">Colors</h6>
+        <ul class="list-unstyled shop-filter-list">
+          <li><input type="checkbox" class="form-check-input me-2"> Black <span class="text-muted">(95)</span></li>
+          <li><input type="checkbox" class="form-check-input me-2"> Blue <span class="text-muted">(11)</span></li>
+          <li><input type="checkbox" class="form-check-input me-2"> Brown <span class="text-muted">(26)</span></li>
+          <li><input type="checkbox" class="form-check-input me-2"> Red <span class="text-muted">(15)</span></li>
+          <li><input type="checkbox" class="form-check-input me-2"> White <span class="text-muted">(34)</span></li>
+          <li><input type="checkbox" class="form-check-input me-2"> Yellow <span class="text-muted">(9)</span></li>
+        </ul>
+
+
+        <div class="filter-container">
+  <!-- Brands -->
+  <div class="filter-box">
+    <h3 class="filter-title">Brands</h3>
+    <div class="filter-search">
+      <input type="text" placeholder="search brands ..." />
+      <button><i class="fas fa-search"></i></button>
+    </div>
+    <ul class="filter-list">
+      <li><input type="checkbox" /> Amazon <span>(8)</span></li>
+      <li><input type="checkbox" /> Apple <span>(1)</span></li>
+      <li><input type="checkbox" /> Ashley <span>(3)</span></li>
+      <li><input type="checkbox" /> Asus <span>(3)</span></li>
+      <li><input type="checkbox" /> Basett <span>(5)</span></li>
+      <li><input type="checkbox" /> Cerave <span>(2)</span></li>
+      <li><input type="checkbox" /> Clinique <span>(4)</span></li>
+    </ul>
+  </div>
+
+  <!-- Price -->
+  <div class="filter-box">
+    <h3 class="filter-title">Price</h3>
+    <ul class="filter-list">
+      <li><input type="checkbox" /> $0 - $100</li>
+      <li><input type="checkbox" /> $100 - $200</li>
+      <li><input type="checkbox" /> $200 - $500</li>
+      <li><input type="checkbox" /> $500+</li>
+    </ul>
+    <div class="filter-range">
+      <input type="text" placeholder="Min" />
+      <input type="text" placeholder="Max" />
+      <button class="filter-btn">FILTER</button>
+    </div>
+  </div>
+
+  <!-- Size -->
+  <div class="filter-box">
+    <h3 class="filter-title">Size</h3>
+    <ul class="filter-list">
+      <li><input type="checkbox" /> US 8 <span>(1)</span></li>
+      <li><input type="checkbox" /> US 9 <span>(1)</span></li>
+      <li><input type="checkbox" /> US 10 <span>(1)</span></li>
+      <li><input type="checkbox" /> US 11 <span>(1)</span></li>
+      <li><input type="checkbox" /> US 12 <span>(1)</span></li>
+      <li><input type="checkbox" /> XS <span>(5)</span></li>
+      <li><input type="checkbox" /> S <span>(7)</span></li>
+      <li><input type="checkbox" /> M <span>(10)</span></li>
+      <li><input type="checkbox" /> L <span>(9)</span></li>
+      <li><input type="checkbox" /> XL <span>(7)</span></li>
+      <li><input type="checkbox" /> XXL <span>(7)</span></li>
+      <li><input type="checkbox" /> 3XL <span>(4)</span></li>
+    </ul>
+  </div>
+
+  <!-- Storage -->
+  <div class="filter-box">
+    <h3 class="filter-title">Storage Capacity</h3>
+    <ul class="filter-list">
+      <li><input type="checkbox" /> 128 GB <span>(1)</span></li>
+      <li><input type="checkbox" /> 64 GB <span>(0)</span></li>
+    </ul>
+  </div>
+
+  <!-- Rating -->
+  <div class="filter-box">
+    <h3 class="filter-title">Customer Rating</h3>
+    <ul class="filter-list">
+      <li>⭐⭐⭐⭐⭐ <span>(22)</span></li>
+    </ul>
+  </div>
+</div>
+
+      </aside>
+
+      <!-- Main Content -->
+      <div class="col-md-9 shop-content">
+        
+        <!-- Top Bar -->
+        <div class="d-flex justify-content-between align-items-center mb-4 shop-topbar">
+          <span>Showing 1–28 of 210 results</span>
+          <div class="d-flex align-items-center gap-3">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input me-1"> Show only products on sale
+            </label>
+            <div>
+              <span class="me-2">Sort:</span>
+              <select class="form-select d-inline-block w-auto shop-sort">
+                <option>Sort by latest</option>
+                <option>Sort by price: low to high</option>
+                <option>Sort by price: high to low</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="row g-3 shop-products">
+          
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <span class="shop-badge badge bg-danger">HOT</span>
+              <div class="shop-img-wrap">
+                <img src="img/fashion-1-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">Nike Air Max Shoes</h6>
+                <p class="fw-bold mb-0">$148</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <div class="shop-img-wrap">
+                <img src="img/fashion-10-1-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">MacBook Air M1</h6>
+                <p class="fw-bold mb-0">$572</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <div class="shop-img-wrap">
+                <img src="img/fashion-5-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">KUORA Sunscreen</h6>
+                <p class="fw-bold mb-0">$14</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <span class="shop-badge badge bg-danger">-35%</span>
+              <div class="shop-img-wrap">
+                <img src="img/fashion-3-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">Asus Vivobook i5</h6>
+                <p class="fw-bold mb-0">$999 
+                  <span class="text-muted text-decoration-line-through">$1536</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <span class="shop-badge badge bg-danger">HOT</span>
+              <div class="shop-img-wrap">
+                <img src="img/fashion-1-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">Nike Air Max Shoes</h6>
+                <p class="fw-bold mb-0">$148</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <div class="shop-img-wrap">
+                <img src="img/fashion-10-1-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">MacBook Air M1</h6>
+                <p class="fw-bold mb-0">$572</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <div class="shop-img-wrap">
+                <img src="img/fashion-5-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">KUORA Sunscreen</h6>
+                <p class="fw-bold mb-0">$14</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <span class="shop-badge badge bg-danger">-35%</span>
+              <div class="shop-img-wrap">
+                <img src="img/fashion-3-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">Asus Vivobook i5</h6>
+                <p class="fw-bold mb-0">$999 
+                  <span class="text-muted text-decoration-line-through">$1536</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <span class="shop-badge badge bg-danger">HOT</span>
+              <div class="shop-img-wrap">
+                <img src="img/fashion-1-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">Nike Air Max Shoes</h6>
+                <p class="fw-bold mb-0">$148</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <div class="shop-img-wrap">
+                <img src="img/fashion-10-1-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">MacBook Air M1</h6>
+                <p class="fw-bold mb-0">$572</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <div class="shop-img-wrap">
+                <img src="img/fashion-5-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">KUORA Sunscreen</h6>
+                <p class="fw-bold mb-0">$14</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <span class="shop-badge badge bg-danger">-35%</span>
+              <div class="shop-img-wrap">
+                <img src="img/fashion-3-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">Asus Vivobook i5</h6>
+                <p class="fw-bold mb-0">$999 
+                  <span class="text-muted text-decoration-line-through">$1536</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <span class="shop-badge badge bg-danger">HOT</span>
+              <div class="shop-img-wrap">
+                <img src="img/fashion-1-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">Nike Air Max Shoes</h6>
+                <p class="fw-bold mb-0">$148</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <div class="shop-img-wrap">
+                <img src="img/fashion-10-1-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">MacBook Air M1</h6>
+                <p class="fw-bold mb-0">$572</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <div class="shop-img-wrap">
+                <img src="img/fashion-5-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">KUORA Sunscreen</h6>
+                <p class="fw-bold mb-0">$14</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <span class="shop-badge badge bg-danger">-35%</span>
+              <div class="shop-img-wrap">
+                <img src="img/fashion-3-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">Asus Vivobook i5</h6>
+                <p class="fw-bold mb-0">$999 
+                  <span class="text-muted text-decoration-line-through">$1536</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <span class="shop-badge badge bg-danger">HOT</span>
+              <div class="shop-img-wrap">
+                <img src="img/fashion-1-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">Nike Air Max Shoes</h6>
+                <p class="fw-bold mb-0">$148</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <div class="shop-img-wrap">
+                <img src="img/fashion-10-1-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">MacBook Air M1</h6>
+                <p class="fw-bold mb-0">$572</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <div class="shop-img-wrap">
+                <img src="img/fashion-5-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">KUORA Sunscreen</h6>
+                <p class="fw-bold mb-0">$14</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <span class="shop-badge badge bg-danger">-35%</span>
+              <div class="shop-img-wrap">
+                <img src="img/fashion-3-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">Asus Vivobook i5</h6>
+                <p class="fw-bold mb-0">$999 
+                  <span class="text-muted text-decoration-line-through">$1536</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <span class="shop-badge badge bg-danger">HOT</span>
+              <div class="shop-img-wrap">
+                <img src="img/fashion-1-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">Nike Air Max Shoes</h6>
+                <p class="fw-bold mb-0">$148</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <div class="shop-img-wrap">
+                <img src="img/fashion-10-1-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">MacBook Air M1</h6>
+                <p class="fw-bold mb-0">$572</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <div class="shop-img-wrap">
+                <img src="img/fashion-5-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">KUORA Sunscreen</h6>
+                <p class="fw-bold mb-0">$14</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <span class="shop-badge badge bg-danger">-35%</span>
+              <div class="shop-img-wrap">
+                <img src="img/fashion-3-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">Asus Vivobook i5</h6>
+                <p class="fw-bold mb-0">$999 
+                  <span class="text-muted text-decoration-line-through">$1536</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <span class="shop-badge badge bg-danger">HOT</span>
+              <div class="shop-img-wrap">
+                <img src="img/fashion-1-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">Nike Air Max Shoes</h6>
+                <p class="fw-bold mb-0">$148</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <div class="shop-img-wrap">
+                <img src="img/fashion-10-1-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">MacBook Air M1</h6>
+                <p class="fw-bold mb-0">$572</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <div class="shop-img-wrap">
+                <img src="img/fashion-5-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">KUORA Sunscreen</h6>
+                <p class="fw-bold mb-0">$14</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="shop-card text-center p-3">
+              <span class="shop-badge badge bg-danger">-35%</span>
+              <div class="shop-img-wrap">
+                <img src="img/fashion-3-300x300.jpg" class="img-fluid shop-img" alt="Product">
+              </div>
+              <div class="mt-3">
+                <h6 class="shop-title">Asus Vivobook i5</h6>
+                <p class="fw-bold mb-0">$999 
+                  <span class="text-muted text-decoration-line-through">$1536</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ====================================== -->
+
+
+
+    
+  <footer class="bg-dark text-white mt-5 pt-5 pb-3">
+      <div class="container">
+        <!-- Brand and Contact Info -->
+        <div class="row mb-5">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h2 class="fw-bold mb-4"><i class="fas fa-gem me-2"></i> Merto</h2>
+            <div class="mb-3">
+              <i class="fas fa-map-marker-alt me-2"></i>
+              <span class="text-light"
+                >29 SE 2nd Ave, Miami<br />Florida 33131, United States</span
+              >
+            </div>
+            <div class="mb-3">
+              <i class="fas fa-envelope me-2"></i>
+              <span class="text-light">info@example.com</span>
+            </div>
+            <div class="mb-3">
+              <i class="fas fa-phone me-2"></i>
+              <h5 class="fw-bold d-inline">(+92) 3942 7879</h5>
+            </div>
+          </div>
+
+          <!-- Shopping Links -->
+          <div class="col-lg-2 col-md-6 col-6 mb-4">
+            <h5 class="fw-semibold mb-3">
+              <i class="fas fa-shopping-bag me-2"></i> SHOPPING
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light">Wishlist</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >Shop by Brand</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light">Offers</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-danger"
+                  >Track order</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >Size Guide</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Information Links -->
+          <div class="col-lg-2 col-md-6 col-6 mb-4">
+            <h5 class="fw-semibold mb-3">
+              <i class="fas fa-info-circle me-2"></i> INFORMATION
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >Track Order</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >Shipping & Returns</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light">About us</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light">Help</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >Gift Cards</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Account Links -->
+          <div class="col-lg-2 col-md-6 col-6 mb-4">
+            <h5 class="fw-semibold mb-3">
+              <i class="fas fa-user me-2"></i> ACCOUNT
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light">Cart</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >My account</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >My orders</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light">Wishlist</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >Affiliate Program</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-semibold mb-3">
+              <i class="fas fa-envelope-open-text me-2"></i> Let's keep in touch
+            </h5>
+            <div class="input-group mb-4">
+              <input
+                type="email"
+                class="form-control bg-dark text-white border-secondary"
+                placeholder="enter your email address"
+                style="border-right: none"
+              />
+              <button class="btn btn-light" type="button">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="d-flex">
+              <a href="#" class="text-light me-3 fs-5"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-light me-3 fs-5"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+              <a href="#" class="text-light me-3 fs-5"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-light me-3 fs-5"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#" class="text-light me-3 fs-5"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Help Sections -->
+        <div class="row mb-4">
+          <div class="col-md-4 mb-3">
+            <div
+              class="bg-secondary bg-opacity-25 rounded p-4 text-center h-100"
+            >
+              <i class="fas fa-headset fs-2 mb-3"></i>
+              <h6 class="fw-semibold">
+                Didn't find what you were looking for?
+              </h6>
+              <a href="#" class="text-decoration-none text-light">Contact us</a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div
+              class="bg-secondary bg-opacity-25 rounded p-4 text-center h-100"
+            >
+              <i class="fas fa-life-ring fs-2 mb-3"></i>
+              <h6 class="fw-semibold">How can we help you today?</h6>
+              <a href="#" class="text-decoration-none text-light"
+                >Help Center</a
+              >
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div
+              class="bg-secondary bg-opacity-25 rounded p-4 text-center h-100"
+            >
+              <i class="fas fa-comments fs-2 mb-3"></i>
+              <h6 class="fw-semibold">We'd love to hear what you think!</h6>
+              <a href="#" class="text-decoration-none text-light"
+                >Give Feedback</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="row border-top pt-4">
+          <div class="col-md-6 mb-3">
+            <p class="text-muted mb-0">
+              Copyright © Merto. All Rights Reserved
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <!-- Payment Methods -->
+            <div class="d-flex flex-wrap justify-content-md-end">
+              <span class="badge bg-light text-dark me-2 mb-2 p-2">
+                <i class="fab fa-paypal"></i> PayPal
+              </span>
+              <span class="badge bg-light text-dark me-2 mb-2 p-2">
+                <i class="fab fa-apple-pay"></i> Apple Pay
+              </span>
+              <span class="badge bg-light text-dark me-2 mb-2 p-2">
+                <i class="fab fa-cc-visa"></i> Visa
+              </span>
+              <span class="badge bg-light text-dark me-2 mb-2 p-2">
+                <i class="fab fa-cc-discover"></i> Discover
+              </span>
+              <span class="badge bg-light text-dark me-2 mb-2 p-2">
+                <i class="fab fa-cc-jcb"></i> JCB
+              </span>
+              <span class="badge bg-light text-dark me-2 mb-2 p-2">
+                <i class="fas fa-credit-card"></i> Pay
+              </span>
+              <span class="badge bg-light text-dark me-2 mb-2 p-2">
+                <i class="fab fa-cc-amex"></i> Amex
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back to Top Button -->
+      <button
+        class="btn btn-danger position-fixed bottom-0 end-0 m-4 rounded-circle shadow"
+        style="width: 50px; height: 50px"
+        onclick="window.scrollTo(0,0)"
+      >
+        <i class="fas fa-chevron-up"></i>
+      </button>
+    </footer>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
